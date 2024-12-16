@@ -1,0 +1,316 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    padding: 0%;
+    list-style: none;
+    box-sizing:border-box;
+
+}
+
+a{
+    color: #000000;
+
+}
+
+.logo{
+    width: 5rem;
+    height: 3rem;
+    cursor: pointer;
+    margin: 12px;
+}
+
+.vr-line{
+    width: 1px;
+    background-color: #ded3d3;
+    height: 20px;
+    margin-top: 25px;
+    margin-left: 8px;
+    margin-right: 10px;
+}
+
+.buy-ticket{
+    width: 7rem;
+}
+
+.rail-vertical{
+    height: 1.25rem;
+    margin-bottom: 0.5rem;
+    width: 2rem;
+    margin-left: 20px;
+
+}
+
+.nav-text{
+    font-size: 14px;
+}
+
+.dropdown-menu>ul>li{
+    margin-bottom: 15px;
+}
+
+.banner{
+    background-image: url('images/banner.webp');
+    height: 450px;
+    margin-right: 0;
+    background-repeat: no-repeat;
+    background-size: 100vw 450px;
+
+}
+
+.search-bar{
+    width: 50%;
+    margin: auto;
+    border-radius: 20px !important;
+
+}
+
+.icon-size{
+    width: 20px;
+
+}
+
+.small-text{
+    
+    font-size: 12px;
+}
+
+.right-left-arrow-vr{
+    width: 1px;
+    position: absolute;
+    height: 72px;
+    margin-top: -23px;
+    background-color: #bab0b0;
+    left: 580px;
+}
+
+.right-left-arrow{
+    position: absolute;
+    padding: 2px;
+    border:1px solid #bab0b0;
+    border-radius: 50%;
+    margin-left: -12px;
+    margin-top: 20px;
+    background: #ffffff;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    
+}
+
+.date-vr{
+    width: 1px;
+    position: absolute;
+    height: 72px;
+    margin-top: -23px;
+    background-color: #bab0b0;
+    left: 780px;
+}
+
+
+
+
+
+.search-button{
+    border: none;
+     background-color: #d74e55 ;
+     height: 74px;
+     margin-top: -24px;
+     margin-left: 70px;
+     width: 200px;
+     position: absolute;
+     border-top-right-radius: 20px;
+     border-bottom-right-radius: 20px;
+}
+
+input:focus {
+    border: none; /* Ensure no border appears */
+    outline: none; /* Remove focus outline */
+    box-shadow: none; /* Remove any browser-added shadow */
+    background-color: #fff; /* Optional: change background color */
+  }
+
+  .trending{
+    font-size: larger;
+    font-weight: 500;
+  }
+
+  .trending-offers-section{
+    margin-top: -50px;
+    
+  }
+
+.card-container {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-behavior: smooth; /* Smooth scroll animation */
+  scroll-snap-type: x mandatory; /* Snap scrolling horizontally */
+  gap: 20px; /* Space between cards */
+  padding: 10px 0;
+}
+
+/* Scroll Snapping for Each Card */
+.card-container > div {
+  scroll-snap-align: start; /* Snap to the start of each card */
+  flex: 0 0 auto; /* Prevent shrinking */
+  width: 340px; /* Set width for each card */
+  height: 170px;
+  border-radius: 10px;
+}
+
+
+.card-container1 > div {
+  scroll-snap-align: start; /* Snap to the start of each card */
+  flex: 0 0 auto; /* Prevent shrinking */
+  width: 440px; /* Set width for each card */
+  height: 240px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  
+  
+}
+/* Card Styling */
+
+
+/* Arrows */
+.arrow-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+.card-images {
+  
+  max-width: 100px;
+  height: auto;
+}
+
+
+  .bus{
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 50px;
+    text-align: center;
+    color: white;
+    border-radius:30px;
+    margin-bottom: 10px;
+  }
+  
+  .coupon{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0px 10px;
+    border-radius: 5px;
+    border: 1px dashed white;
+    margin-right: 20px;
+  }
+
+.cards-body{
+flex-basis: 300px;
+}
+
+
+    /* Card Styling */
+    .card-custom {
+      flex: 0 0 30%; /* Ensures each card is 30% width */
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    
+
+    .code-banner {
+         padding: 5px 0;
+    }
+
+   
+
+    .rating-badge {
+      background-color: #28a745;
+      color: white;
+      font-size: 0.8rem;
+      padding: 2px 6px;
+      border-radius: 5px;
+    }
+
+    .offer-card{
+      background-color: white;
+      border-radius: 15px;
+
+    }
+    .official-icon {
+      margin-right: 8px;
+    }
+
+
+   
+.goverment-bus{
+  width: 500px;
+
+  padding-left: 0px;
+  background-color: #f9e9ea;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.last-red{
+  padding: 10px;
+}
+
+.official-partner{
+  background-color:rgba(0, 0, 0, 0.1);
+}
+
+.logoimage{
+  width: 30px;
+}
+
+.space-minus{
+  margin-top: -50px;
+  margin-bottom: 20px;
+}
+
+.color-red{
+  color: #d74e55;
+}
+
+.hotrizontal-line{
+  width: 205px;
+  height: 3px;
+  background-color: #d74e55 ;
+}
+
+.pop{
+  background-image: url('https://s3.rdbuz.com/web/images/homeV2/AboutUs/aboutUsImg.svg');
+  background-size: cover;
+}
+
+.enjoy-section{
+  background-image: url('images/appInstallbg.svg');
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  height: 450px;
+background-position: center;
+}
