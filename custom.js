@@ -95,51 +95,51 @@ cardContainer.addEventListener("wheel", (e) => {
 
 const card1Data = [
   {
-    "logo":"images/17889.png",
-    "rating":"3.91",
-    "BusName":"BSRTC",
-    "busText":"बिहार राज्य रोड ट्रांसपोर्ट कॉर्पोरेशन",
-    "services":"220 services including Volvo Bus, AC & Non AC Bus and more",
-    "offical":"Official booking partner of BSRTC",
+    "logo": "images/17889.png",
+    "rating": "3.91",
+    "BusName": "BSRTC",
+    "busText": "बिहार राज्य रोड ट्रांसपोर्ट कॉर्पोरेशन",
+    "services": "220 services including Volvo Bus, AC & Non AC Bus and more",
+    "offical": "Official booking partner of BSRTC",
   },
 
   {
-    "logo":"images/11060.png",
-    "rating":"3.83",
-    "BusName":"  PEPSU",
-    "busText":"  ਪੈਪਸੂ ਰੋਡ ਟਰਾਂਸਪੋਰਟ ਕਾਰਪੋਰੇਸ਼ਨ",
-    "services":"  100 services including Volvo Bus, AC & Non AC Bus and more",
-    "offical":"Official booking partner of PEPSU",
+    "logo": "images/11060.png",
+    "rating": "3.83",
+    "BusName": "  PEPSU",
+    "busText": "  ਪੈਪਸੂ ਰੋਡ ਟਰਾਂਸਪੋਰਟ ਕਾਰਪੋਰੇਸ਼ਨ",
+    "services": "  100 services including Volvo Bus, AC & Non AC Bus and more",
+    "offical": "Official booking partner of PEPSU",
   },
 
-  
-  {
-    "logo":"images/16081.png",
-    "rating":"3.91",
-    "BusName":"TSRTC",
-    "busText":"తెలంగాణ రాష్ట్ర రోడ్డు రవాణా సంస్థ",
-    "services":"1450 services including Garuda Plus, Rajdhani and more",
-    "offical":"Official booking partner of TSRTC",
-  },
 
   {
-    "logo":"images/16227.png",
-    "rating":"3.83",
-    "BusName":"  PEPSU",
-    "busText":"  ਪੈਪਸੂ ਰੋਡ ਟਰਾਂਸਪੋਰਟ ਕਾਰਪੋਰੇਸ਼ਨ",
-    "services":"  100 services including Volvo Bus, AC & Non AC Bus and more",
-    "offical":"Official booking partner of PEPSU",
+    "logo": "images/16081.png",
+    "rating": "3.91",
+    "BusName": "TSRTC",
+    "busText": "తెలంగాణ రాష్ట్ర రోడ్డు రవాణా సంస్థ",
+    "services": "1450 services including Garuda Plus, Rajdhani and more",
+    "offical": "Official booking partner of TSRTC",
   },
 
   {
-    "logo":"images/28.png",
-    "rating":"3.91",
-    "BusName":"TSRTC",
-    "busText":"తెలంగాణ రాష్ట్ర రోడ్డు రవాణా సంస్థ",
-    "services":"1450 services including Garuda Plus, Rajdhani and more",
-    "offical":"Official booking partner of TSRTC",
+    "logo": "images/16227.png",
+    "rating": "3.83",
+    "BusName": "  PEPSU",
+    "busText": "  ਪੈਪਸੂ ਰੋਡ ਟਰਾਂਸਪੋਰਟ ਕਾਰਪੋਰੇਸ਼ਨ",
+    "services": "  100 services including Volvo Bus, AC & Non AC Bus and more",
+    "offical": "Official booking partner of PEPSU",
   },
- 
+
+  {
+    "logo": "images/28.png",
+    "rating": "3.91",
+    "BusName": "TSRTC",
+    "busText": "తెలంగాణ రాష్ట్ర రోడ్డు రవాణా సంస్థ",
+    "services": "1450 services including Garuda Plus, Rajdhani and more",
+    "offical": "Official booking partner of TSRTC",
+  },
+
 ];
 
 const card1Container = document.getElementById("card1Container");
@@ -191,7 +191,7 @@ card1Data.forEach((item) => {
   `;
   card1Container.insertAdjacentHTML("beforeend", card1);
 });
- // Card width + gap
+// Card width + gap
 
 const leftArrow1 = document.getElementById("leftArrow1");
 const rightArrow1 = document.getElementById("rightArrow1");
@@ -211,3 +211,189 @@ card1Container.addEventListener("wheel", (e) => {
   const delta = Math.sign(e.deltaY); // Determine scroll direction (up/down)
   card1Container.scrollLeft += delta * scrollAmount1; // Scroll to next or previous card
 });
+
+function toggleReadMore() {
+  const dots = document.getElementById("dots");
+  const moreText = document.getElementById("moreText");
+  const btn = document.getElementById("readMoreBtn");
+
+  if (moreText.style.display === "none") {
+    moreText.style.display = "block";
+    dots.style.display = "none";
+    btn.textContent = "Read less";
+  } else {
+    moreText.style.display = "none";
+    dots.style.display = "inline";
+    btn.textContent = "Read more";
+  }
+}
+
+
+const faqData = {
+  "General": [
+    {
+      "question": "Can I track the location of my booked bus online?",
+      "answer": "Yes, you can track your bus online using our 'Track My Bus' feature. This allows passengers and their families to monitor the live bus location, follow the bus on a map, and plan trips to the boarding point accordingly. Family and friends can also check the bus position to schedule pick-ups and ensure safety."
+    },
+    {
+      "question": "What are the advantages of purchasing a bus ticket with redBus?",
+      "answer": "Purchasing online bus tickets with redBus offers numerous advantages. redBus is India’s most trusted bus ticket company, allowing you to book various types of private or government-owned buses. You can choose preferred bus seats, find the nearest boarding and dropping points, and filter buses based on timings, such as morning or evening."
+    },
+    {
+      "question": "Why book bus tickets online on redBus?",
+      "answer": "Booking bus tickets online on redBus is preferred due to its convenience. Customers can book tickets from the comfort of their homes, compare different bus schedules and operators, and access various discount offers and exclusive deals. Online booking ensures payment security and allows seat selection, providing a customized travel experience. Additionally, customers receive real-time updates about any changes in the bus timetable, enabling better planning."
+    },
+    {
+      "question": "Does bus booking online cost me more?",
+      "answer": "No, booking online does not cost more. The bus ticket price is the same as you would get from the bus operator or any bus ticket agency counter. redBus helps reduce travel costs by comparing ticket prices among various operators, making it a more cost-effective choice."
+    },
+    {
+      "question": "How can I get discounts on bus bookings?",
+      "answer": "To get a discount on bus bookings, visit [redBus Offers](https://www.redbus.in/info/OfferTerms) and check the available offers. Copy the coupon code and paste it during checkout to avail of the discount."
+    },
+    {
+      "question": "What's new in bus booking on redBus?",
+      "answer": "redBus has launched Primo bus services, where passengers can enjoy traveling in high-rated buses with best-in-class services. While looking for bus tickets on the desired route, customers can check the Primo tag to choose this excellent service, benefiting from hygiene standards, on-time service, and comfort."
+    },
+    {
+      "question": "Can I book a Government bus ticket on redBus?",
+      "answer": "Yes, redBus allows you to book tickets for various state government bus operators, including APSRTC, TSRTC, GSRTC, Kerala RTC, TNSTC, RSRTC, and UPSRTC."
+    }
+  ],
+  "Payment": [
+    {
+      "question": "Is it safe to use my credit or debit card to buy bus tickets on redBus?",
+      "answer": "Transactions on redBus are very safe. We employ best-in-class security measures, including Secure Socket Layers (SSL) data encryption, ensuring that the information exchanged is never transmitted unencrypted and is protected from unauthorized access."
+    },
+    {
+      "question": "Does the owner of the credit card/debit card with which the bus ticket is purchased need to be one of the passengers?",
+      "answer": "No, the owner of the card doesn't need to be a passenger. However, you need to provide accurate details while booking to ensure smooth verification and travel."
+    },
+    {
+      "question": "What are the different payment options available for bus ticket booking?",
+      "answer": `
+       <ul>
+          <li>● Debit Card/Credit Card/ATM Cards (Visa, MasterCard, Maestro & Rupay)</li>
+          <li>● Net Banking (HDFC Bank, ICICI Bank, Indian Bank, Axis Bank, SBI, and all major banks)</li>
+          <li>● UPI (Google Pay, Amazon Pay, PhonePe)</li>
+          <li>● Book Now, Pay Later (Simpl)</li>
+          <li>● Wallets (Paytm)</li>
+        </ul>
+        Ensure to check for coupon codes to get discounts on bus bookings online, as redBus offers a lot of redDeals to help you book tickets within your budget.
+      `
+    },
+    {
+      "question": "How does the transaction appear on my card/account statement?",
+      "answer": "Transactions on redBus will appear as REDBUS.IN or www.redbus.in in your bank statement."
+    }
+  ],
+  "Cancellation & Refund": [
+    {
+      "question": "How can I cancel my bus ticket?",
+      "answer": "To cancel your bus ticket, log in to your redBus account, go to 'My Bookings', select the ticket you wish to cancel, and click on 'Cancel'. Follow the prompts to complete the cancellation process."
+    },
+    {
+      "question": "What is the refund policy for canceled tickets?",
+      "answer": "The refund policy varies depending on the bus operator and the time of cancellation. Generally, cancellations made well in advance may be eligible for a partial refund after deducting cancellation charges. It's advisable to check the specific terms and conditions during the booking process."
+    },
+    {
+      "question": "How long does it take to receive a refund after cancellation?",
+      "answer": "Refunds are typically processed within 5-7 business days. The exact time may vary depending on your bank or payment provider."
+    }
+  ],
+  "Insurance": [
+    {
+      "question": "Does redBus offer travel insurance?",
+      "answer": "Yes, redBus offers travel insurance options during the booking process. You can choose to add insurance to your booking for coverage against unforeseen events."
+    },
+    {
+      "question": "What does the travel insurance cover?",
+      "answer": "Travel insurance coverage may include accidental death or disability, medical expenses due to accidents, trip cancellation, and loss of baggage, among other benefits. The specific coverage details will be provided during the booking process."
+    },
+    {
+      "question": "How can I claim travel insurance?",
+      "answer": "In the event of a claim, you should contact the insurance provider directly. The contact details and claim procedure will be provided in the insurance policy document sent to your registered email after booking."
+    }
+  ]
+};
+
+
+// DOM Elements
+const tabs = document.querySelectorAll('.custom-tab');
+const faqContent = document.getElementById('faqContent');
+
+// Function to Render FAQs for the Selected Tab
+function renderFAQs(category) {
+  faqContent.innerHTML = ''; // Clear existing content
+
+  faqData[category].forEach(faq => {
+    const faqItem = document.createElement('div');
+    faqItem.classList.add('faq-item');
+
+    const faqQuestion = document.createElement('div');
+    faqQuestion.classList.add('faq-question');
+    faqQuestion.innerHTML = `${faq.question} <span class="icon">+</span>`;
+
+    const faqAnswer = document.createElement('div');
+    faqAnswer.classList.add('faq-answer');
+    faqAnswer.style.display = 'none'; // Ensure answers are hidden by default
+    faqAnswer.innerHTML = faq.answer;
+
+    // Add Toggle Functionality for FAQ Answer
+    faqQuestion.addEventListener('click', () => {
+      // Close any currently open FAQ items
+      const openAnswers = faqContent.querySelectorAll('.faq-answer');
+      openAnswers.forEach(answer => {
+        if (answer !== faqAnswer && answer.style.display === 'block') {
+          answer.style.display = 'none';
+          answer.previousElementSibling.querySelector('.icon').textContent = '+';
+          answer.previousElementSibling.style.backgroundColor = ''; // Reset background color
+          answer.style.backgroundColor = ''; // Reset background color
+        }
+      });
+
+      // Toggle the clicked FAQ item
+      const isVisible = faqAnswer.style.display === 'block';
+      faqAnswer.style.display = isVisible ? 'none' : 'block';
+      faqQuestion.querySelector('.icon').textContent = isVisible ? '+' : '−';
+      faqQuestion.style.backgroundColor = isVisible ? '' : '#f3f4f9';
+      faqAnswer.style.backgroundColor = isVisible ? '' : '#f3f4f9';
+    });
+
+    faqItem.appendChild(faqQuestion);
+    faqItem.appendChild(faqAnswer);
+    faqContent.appendChild(faqItem);
+  });
+}
+
+// Activate Tabs
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(t => t.classList.remove('active')); // Remove active class from all tabs
+    tab.classList.add('active'); // Add active class to clicked tab
+    renderFAQs(tab.dataset.tab); // Render FAQs for the selected tab
+  });
+});
+
+// Render FAQs for the First Tab by Default
+renderFAQs('General');
+
+
+function toggleSection(header) {
+  const content = header.nextElementSibling; // Get the content area
+  const icon = header.querySelector('.toggle-icon'); // Get the Font Awesome icon
+
+  // Toggle active class for the header and content
+  header.classList.toggle('active');
+  content.classList.toggle('active');
+
+  // Show or hide the content
+  if (content.classList.contains('active')) {
+      content.style.display = 'block'; // Show content
+  } else {
+      content.style.display = 'none'; // Hide content
+  }
+
+  // Rotate the icon based on content visibility
+  icon.style.transform = content.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0deg)';
+}
